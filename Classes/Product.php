@@ -5,7 +5,7 @@ class Product
 {
     public $id;
     public $name;
-    public $picture;
+    public $image;
     public $description;
     public $category_id;
 

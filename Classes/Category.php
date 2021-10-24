@@ -5,7 +5,7 @@ class Category
 {
     public $id;
     public $name;
-    public $picture;
+    public $image;
 
     public function __construct()
     {
