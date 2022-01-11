@@ -9,12 +9,11 @@ function getCategories()
     return $result;
 }
 
-function getCategoryName(int $id)
+function getCategoryName($id)
 {
     global $pdo;
     $query=$pdo->prepare("SELECT name FROM categories WHERE id=$id");
     $query->execute();
-
     $result=$query->fetchAll(PDO::FETCH_CLASS, "Category");
     return $result;
 }

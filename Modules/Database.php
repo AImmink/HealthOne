@@ -1,6 +1,6 @@
 <?php
 $host = '127.0.0.1';
-$db   = 'healthone';
+$db   = 'healthone1';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
@@ -17,6 +17,8 @@ try {
     include_once ('../Classes/Category.php');
     include_once ('../Classes/Product.php');
     include_once ('../Classes/Time.php');
+    include_once ('../Classes/User.php');
+    include_once ('../Classes/Review.php');
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
