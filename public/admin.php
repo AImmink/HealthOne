@@ -22,7 +22,7 @@ if (!isAdmin()){
                     include_once "../Templates/admin/users.php";
                 } else {
                     $succes = deleteUser($userId);
-                    $message = "<div class='alert alert-success' role='alert'> ✔ Machine succesvol gedelete.</div>";
+                    $message = "<div class='alert alert-success' role='alert'> ✔ User succesvol gedelete.</div>";
                     include_once "../Templates/admin/users.php";
                 }
             }   else {
@@ -66,7 +66,7 @@ if (!isAdmin()){
                     include_once "../Templates/admin/messages.php";
                 } else {
                     $succes = deleteMessage($messageId);
-                    $message = "<div class='alert alert-success' role='alert'> ✔ Machine succesvol gedelete.</div>";
+                    $message = "<div class='alert alert-success' role='alert'> ✔ Bericht succesvol gedelete.</div>";
                     include_once "../Templates/admin/messages.php";
                 }
             }   else {
