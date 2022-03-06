@@ -77,6 +77,7 @@ switch ($params[1]) {
         break;
     case 'contact':
         $titleSuffix = ' | Contact';
+        $Open_Times = getOpen_times();
         if(isset($_POST['verzenden'])) {
             $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
             $message = filter_input(INPUT_POST, 'message', );
